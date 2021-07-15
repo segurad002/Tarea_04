@@ -1,0 +1,29 @@
+#Cargamos los paquetes
+library(sf)
+library(raster)
+library(dplyr)
+library(rmapshaper)
+library(spData)
+
+#Carga de registros de Orquideas en Costa Rica 
+orquideas_cr <-
+  st_read(
+    "https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2021i-datos/main/gbif/orchidaceae-cr-registros.csv",
+    quiet = TRUE
+  )
+
+#Se eliminan los registros con un valor mayor que 1000 de la capa de registros de pressencia
+
+#Se eliminan los registros con valor vacío o NA en el campo species, en el conjunto de datos de registros de presencia
+
+#se eliminan los registros con valor de Area Marina de Manejo 
+
+#Visualización de  capas y controles
+## Agregamos la capa base
+## Agregamos una capa  para visualizar la cantidad de especies 
+## Creamos una leyenda que muestre la relacion entre colores y cantidad de especies
+## Añadimos un control para activar y desactivar las capas 
+
+
+0
+0
